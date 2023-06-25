@@ -1,6 +1,6 @@
 print("hello world!")
 print("Hello git, I come back")
-event = 2
+event = 1
 if event>=5:
     print("all ok")
 elif event ==3:
