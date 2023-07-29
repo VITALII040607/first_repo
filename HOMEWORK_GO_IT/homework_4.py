@@ -58,6 +58,22 @@
 # print(formatted_result)  # Виведе: "2 eggs, 1 liter sugar, 1 tsp salt and vinegar"
 
 
+'''
+Як ми знаємо, ключ у словнику має бути унікальним, тоді як значення його ні. Реалізуйте функцію lookup_key для пошуку всіх ключів
+ за значенням у словнику. Першим параметром у функцію ми передаємо словник, а другим — значення, що хочемо знайти.
+Таким чином, результат може бути як список ключів,так і порожній список, якщо ми нічого не знайдемо.
+'''
+# def lookup_key(data, value):
+#     found_keys = []
+#     for key, val in data.items():
+#         if val == value:
+#             found_keys.append(key)
+#     return found_keys
 
+
+# # Приклад використання функції
+# data = {'key1': 1, 'key2': 2, 'key3': 3, 'key4': 2}
+# result = lookup_key(data, 2)
+# print(result)  # Виведе: ['key2', 'key4']
 
 
