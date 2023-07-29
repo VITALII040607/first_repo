@@ -105,15 +105,15 @@
 # pages = (number_of_records -1)//RECORD_FOR_PAGE +1
 # print((pages))
 
-# sample2
-num = int(input())
-# input 12 12//10 = 1
-num_1 = num // 10
-# he result of the expression num_2 will be 1 (True) if the last digit of num is greater than 0, or 0 (False) if it is false.
-# 12%10 =0.2 >0  = True <==> num_2 =1
-num_2 = int(num % 10 > 0)
-sum = num_1 + num_2
-print(sum)
+# # sample2
+# num = int(input())
+# # input 12 12//10 = 1
+# num_1 = num // 10
+# # he result of the expression num_2 will be 1 (True) if the last digit of num is greater than 0, or 0 (False) if it is false.
+# # 12%10 =0.2 >0  = True <==> num_2 =1
+# num_2 = int(num % 10 > 0)
+# sum = num_1 + num_2
+# print(sum)
 
 # example_12
 # Input - 5000
@@ -130,10 +130,76 @@ print(sum)
 # print(f"Number of hours = {hours}, number of minutes = {minutes}, number of seconds = {seconds_remaining}")
 
 # sample2
-seconds_sum= int(input('Ener your number: '))
-hours = seconds_sum // 3600
-seconds_sum -= hours * 3600
-minut = seconds_sum// 60
-seconds_sum -= minut * 60
-seconds_remaining = num
-print(f'Otput_hours - {hours}\nOtput_minutes - {minut}\nOtput_seconds - {seconds_remaining}')
+# seconds_sum= int(input('Ener your number: '))
+# hours = seconds_sum // 3600
+# seconds_sum -= hours * 3600
+# minut = seconds_sum// 60
+# seconds_sum -= minut * 60
+# seconds_remaining = num
+# print(f'Otput_hours - {hours}\nOtput_minutes - {minut}\nOtput_seconds - {seconds_remaining}')
+
+
+# example_15
+# input 2023
+# output 21 centure
+# (take into account that, for example, the beginning of the 21th century was 2001, not 2000).
+# years = int(input("enter the year ="))
+# result =(years -1)//100
+# centure =result +1
+# print (f"today is a year{years} and a century{centure}")
+
+# example_16
+# sample1    _NOT_FINISHED
+# Input_croissants - 4
+# Input_cups - 5
+# Input_coffee - 6
+# Output_dollars - 32
+# Output_cents - 3238
+
+# croissants = int(input("Input_croissants = "))
+# cups = int(input("Input_cups = "))
+# coffee = int(input("Input_coffee = "))
+
+# PRICE_CROISSANTS = float(1.04 *croissants)
+# PRICE_CUPS = round(float(0.34 *cups),2)
+# PRICE_COFFEE = float(4.42 *coffee)
+# sum_dolars = int(PRICE_CROISSANTS + PRICE_CUPS + PRICE_COFFEE  )
+# sum_cents = round(PRICE_CROISSANTS % 1, 2) + round(PRICE_CUPS % 1, 2) + round(PRICE_COFFEE % 1, 2)
+# print(f"{PRICE_CROISSANTS}, {PRICE_CUPS}, {PRICE_COFFEE},\n {sum_dolars}, {sum_cents}")
+
+# sample_2
+croissants = int(input("Enter croissants: "))
+cups = int(input("Enter cups: "))
+coffee = int(input("Enter coffee: "))
+
+price_croissants = 1.04
+price_cups = 0.34
+price_coffee = 4.42
+
+sum_dollars = croissants * price_croissants + \
+              cups * price_cups + \
+              coffee * price_coffee
+only_dollars = int(sum_dollars)
+sum_cents = int(sum_dollars * 100)
+print(f"Dollars: {only_dollars}, cents: {sum_cents}")
+
+
+# examples for loop
+
+# money = float(input("tell me how much money you have = "))
+# if money >= 50:
+#     print("you can buy the game!!!")
+# else:
+#     print("need to collect more money")
+
+# pizza = str(input("check if you have all the pizza ingredients,\n"
+#                   "answer only yes or no :  "))
+# if pizza == "yes" or pizza == "YES" or pizza == "Yes":
+#     print ("let's start making it quickly")
+# elif pizza == "no" or pizza == "NO" or pizza == "No":
+#     print("you still need to buy some ingredients")                 
+# else:
+#     print("Invalid input. Please answer with 'yes' or 'no'.")
+
+
+

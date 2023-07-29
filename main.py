@@ -1,12 +1,16 @@
-print("hello world!")
-print("Hello git, I come back")
-event = 1
-if event>=5:
-    print("all ok")
-elif event ==3:
-    print ("bingo!")
-elif event ==2:
-    print ("bingo2!")
-else :
-    print("not enough")
+greetings = {
+    "English": "Hello!",
+    "French": "Bonjour!",
+    "Spanish": "¡Hola!",
+    # Додаткові мови можна додати тут
+}
 
+
+def greet(language):
+    return greetings.get(language, "Hello!")  # За замовчуванням повертає "Hello!" для невідомих мов
+
+
+# Приклад використання
+print(greet("English"))  # Виведе: Hello!
+print(greet("French"))  # Виведе: Bonjour!
+print(greet("German"))  # Виведе: Hello! (за замовчуванням)
