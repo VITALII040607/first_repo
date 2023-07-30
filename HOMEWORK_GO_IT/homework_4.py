@@ -76,4 +76,33 @@
 # result = lookup_key(data, 2)
 # print(result)  # Виведе: ['key2', 'key4']
 
+'''
+У нас є список показників студентів групи – це список з отриманими балами з тестування. 
+Необхідно поділити список на дві частини. Напишіть функцію split_list, яка приймає список (цілі числа), 
+знаходить середнє значення бала у списку та ділить його на два списки.
+ У перший потрапляють значення менше середнього, включаючи середнє значення, тоді як у другий — строго більше від середнього.
+ Функція повертає кортеж цих двох списків. Для порожнього списку повертаємо два порожні списки.
+'''
+# def split_list(grade):
+#     if not grade:
+#         return [],[] # Check two empty lists for an empty grade list
+
+#     # Calculating the average value of the balls
+#     average_score = sum(grade)/ len(grade)
+#     print(average_score)
+#     # create two lists
+#     lower_average = [] # List with scores less or more than average
+#     higher_average = [] # List with higher scores for the average
+
+#     # We divide the balls into two groups: less or more for the average and more for the average
+#     for score in grade:
+#         if score <= average_score:
+#             lower_average.append(score)
+#         else:
+#             higher_average.append(score)
+#     return lower_average, higher_average  # Let's rotate two lists
+# # An example of using the function
+# our_list = [85, 90, 78, 92, 70, 88, 82, 95, 85, 75]
+# result =split_list(our_list)
+# print(result)
 
